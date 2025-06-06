@@ -1,0 +1,69 @@
+{
+  "name": "retool-custom-components-library",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@googlemaps/markerclusterer": "^2.5.1",
+    "@tryretool/custom-component-support": "latest",
+    "@vis.gl/react-google-maps": "latest",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nylas": "^7.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "npx retool-ccl dev",
+    "deploy": "npx retool-ccl deploy"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "postcss-modules": "^6.0.0",
+    "prettier": "^3.0.3"
+  },
+  "retoolCustomComponentLibraryConfig": {
+    "name": "CoolCustomComponents",
+    "label": "Cool Custom components",
+    "description": "Cool components",
+    "entryPoint": "src/index.tsx",
+    "outputPath": "dist"
+  },
+  "description": "A modern base for building custom component libraries in Retool. Crafted with care by Miguel.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MiguelOrtizUp/retool-custom-components-library.git"
+  },
+  "keywords": [
+    "retool",
+    "custom-components",
+    "library",
+    "react"
+  ],
+  "author": "Miguel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelOrtizUp/retool-custom-components-library/issues"
+  },
+  "homepage": "https://github.com/MiguelOrtizUp/retool-custom-components-library#readme"
+}

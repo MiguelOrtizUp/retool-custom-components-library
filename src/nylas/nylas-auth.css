@@ -1,0 +1,116 @@
+.gsi-material-button,
+.ms-material-button {
+    -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;  
+  background-color: #f2f2f2;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  height: 40px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  max-width: 400px;
+  min-width: min-content;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 4px 0 0; /* Add right margin for spacing between buttons */
+}
+
+.gsi-material-button:last-child,
+.ms-material-button:last-child {
+  margin-right: 0;
+}
+
+.gsi-material-button:hover,
+.ms-material-button:hover {
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+  background-color: #e6e6e6;
+  border-color: #bdbdbd;
+}
+
+.gsi-material-button:active,
+.ms-material-button:active {
+  background-color: #e0e0e0;
+  border-color: #bdbdbd;
+}
+
+.gsi-material-button:focus,
+.ms-material-button:focus {
+  outline: 2px solid #4285f4;
+  outline-offset: 2px;
+}
+
+.gsi-material-button .gsi-material-button-icon,
+.ms-material-button .ms-material-button-icon {
+  height: 20px;
+  margin-right: 12px;
+  min-width: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gsi-material-button .gsi-material-button-contents,
+.ms-material-button .ms-material-button-contents {
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.gsi-material-button .gsi-material-button-content-wrapper,
+.ms-material-button .ms-material-button-content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+.nylas-step-message {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 4px 8px;
+  margin: 4px 0 0 0;
+  box-shadow: 0 2px 8px 0 rgba(60,64,67,0.07);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: unset;
+  overflow: hidden;      /* Prevents scrollbars */
+  max-height: 100%;      /* Ensures it doesn't exceed parent */
+  box-sizing: border-box;
+}
+.nylas-step-message--success {
+  color: #137333;
+  background: #e6f4ea;
+}
+.nylas-step-message--error {
+  color: #a50e0e;
+  background: #fce8e6;
+}
+.nylas-step-message--loading {
+  color: #1967d2;
+  background: #e8f0fe;
+}

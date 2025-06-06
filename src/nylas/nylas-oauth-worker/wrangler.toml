@@ -1,0 +1,13 @@
+name = "nylas-oauth-worker"
+main = "src/index.js"
+workers_dev = true
+compatibility_date = "2025-05-19"
+
+[observability]
+enabled = true
+
+[env.dev]
+main = "src/index.js"
+workers_dev = true
+compatibility_date = "2025-05-19"
+
