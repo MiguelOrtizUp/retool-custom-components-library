@@ -11,6 +11,17 @@ Crafted and maintained by Miguel.
 
 ---
 
+## Cloning the Repository
+
+To get started, clone this repository:
+
+```sh
+git clone https://github.com/MiguelOrtizUp/retool-custom-components-library.git
+cd retool-custom-components-library
+```
+
+---
+
 ## Features
 
 ### Gmap
@@ -41,6 +52,12 @@ For setup instructions, see the [Google Maps Platform 101 with React](https://de
 - **Cloudflare Worker** handles the OAuth redirect and token exchange
 - **Grant ID** is returned to Retool state for downstream use
 - **Customizable Email**: Pre-fill the email field
+
+**Nylas v3 Auth Reference:**  
+This component uses the Nylas v3 authentication flow. For a detailed explanation of the process, see the [Nylas v3 Auth documentation](https://developer.nylas.com/docs/v3/auth/).
+
+**Google Connector Setup:**  
+To connect Google accounts, you need to create a Google connector in your Nylas dashboard. Follow the steps in the [Nylas guide to creating a Google app](https://developer.nylas.com/docs/dev-guide/provider-guides/google/create-google-app/).
 
 **Usage:**
 ```tsx
@@ -82,6 +99,32 @@ Set your Cloudflare Worker URL in [`src/nylas/index.tsx`](src/nylas/index.tsx) a
 - `src/gMap/` – Google Map component and helpers
 - `src/nylas/` – Nylas OAuth component and Cloudflare Worker
 - `src/index.tsx` – Library entry point
+
+---
+
+## Retool Library Setup
+
+To connect and start working with your Retool custom component library, run the following commands:
+
+1. **Login to Retool:**
+   ```sh
+   npx retool-ccl login
+   ```
+
+2. **Initialize the library (if needed):**
+   ```sh
+   npx retool-ccl init
+   ```
+
+3. **Start local development:**
+   ```sh
+   npx retool-ccl dev
+   ```
+
+4. **Deploy your library to Retool:**
+   ```sh
+   npx retool-ccl deploy
+   ```
 
 ---
 
